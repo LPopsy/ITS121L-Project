@@ -1,47 +1,127 @@
-.content {
-    text-align: justify;
-    color: white;
-    border-radius: 5px;
-    margin-left: 7.5%;
-    margin-right: 7.5%;
-    margin-top: 7.5%;
-    margin-bottom: 7.5%;
-}
-.homepage-content {
-    margin-left: 7.5%;
-    margin-right: 7.5%;
-    margin-top: 7.5%;
-    margin-bottom: 7.5%;
+.content, .homepage-content, .quality-safety-content {
+    margin: 7.5%;
     background-color: white;
     border: 2px solid #ccc;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     text-align: justify;
 }
+
 .homepage-body {
     background-image: url("images/marble_bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .homepage-main-content {
     text-align: center;
     margin: 77px;
+    font-size: 75px;
+    color: rgb(0, 169, 78);
 }
+
+.homepage-main-content p {
+    color: black;
+    font-size: medium;
+}
+
+.homepage-main-content a {
+    color: rgba(255, 255, 255, 0.897);
+}
+
+.homepage-main-content a :hover {
+    color: white;
+}
+
 .footer {
     background-color: rgb(0, 169, 78);
     color: white;
     text-align: center;
-    height: 10%;
     width: 100%;
     position: fixed;
     bottom: 0;
     left: 0;
     padding: 10px;
-}
-.quality-safety-content {
-    margin-left: 7.5%;
-    margin-right: 7.5%;
-    margin-top: 7.5%;
-    margin-bottom: 7.5%;
+    font-size: 14px;
 }
 
+.my-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.my-button:hover {
+    background-color: #45a049;
+}
+
+@media screen and (max-width: 1200px) {
+    .homepage-content, .content, .quality-safety-content {
+        margin: 5%;
+    }
+
+    .homepage-main-content {
+        margin: 50px;
+        font-size: 50px;
+    }
+
+    .footer {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .my-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .homepage-content, .content, .quality-safety-content {
+        margin: 2.5%;
+    }
+
+    .homepage-main-content {
+        margin: 20px;
+        font-size: 40px;
+    }
+
+    .footer {
+        padding: 6px;
+        font-size: 10px;
+    }
+
+    .my-button {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .homepage-content, .content, .quality-safety-content {
+        margin: 1%;
+    }
+
+    .homepage-main-content {
+        margin: 10px;
+        font-size: 30px;
+    }
+
+    .footer {
+        padding: 4px;
+        font-size: 8px;
+    }
+
+    .my-button {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+}
